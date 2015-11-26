@@ -40,7 +40,7 @@ Other things like capitalize or small letters, numbers and special characters fo
 ## Inline
 Don't use inline styles.
 
-> Don't: <div style="margin-top: 0px;">
+> Don't: &lt;div style="margin-top: 0px;"&gt;
 
 Inline styles can be used when changing something ( working on dynamic styles ) from Javascript.
 
