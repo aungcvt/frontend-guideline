@@ -28,4 +28,8 @@ Long id should use underscore ( _ ) to divide. Don't use dash ( - ) for id.
 > Not: id="abc-def"
 
 
+Don't use camelCase for id. Leave camelCase for Javascript variables or other programming language variables.
+
+> Not: id="someThing doNotUseThis"
+
 Other things like capitalize or small letters, numbers and special characters follow class name.
