@@ -68,7 +68,7 @@ Don't use inline styles.
 
 **Don't:**
 ````html
-&lt;div style="margin-top: 0px;"&gt;
+<div style="margin-top: 0px;">
 ````
 
 Inline styles can be used when changing something ( mostly numbers ) from Javascript.
