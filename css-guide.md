@@ -84,3 +84,127 @@ For other dynamic styles ( e.g. color changing ), use class names to change the 
 ````javascript
 $('div').addClass('text-green');
 ````
+
+### External
+Always include external stylesheets in `<head>` section.
+
+### Internal
+Don't use internal css if not really necessary.
+
+
+## Writing
+
+### Lines
+Use open curly bracket with the same line with selector and close curly bracket in the next line.
+Use one space between selector and open bracket.
+There should be one line break between each style.
+
+**Do**
+````css
+.selector {
+  background: white;
+}
+
+.another-selector {
+  color: white;
+}
+````
+
+**Don't**
+````css
+.selector
+{
+  font-weight: bold;
+}
+
+.selector{font-weight: bold;}
+````
+
+Use another line for multi selectors.
+
+**Do**
+````css
+.selector-1,
+.selector-2 {
+  color: red;
+}
+````
+
+**Don't**
+````css
+.selector-1, .selector-2 {
+  color: red;
+}
+````
+
+### Spaces ( Indent )
+Use soft tab _( 2 spaces )_ for tab. Each declaration must have one tab from left.
+
+**Do**
+````css
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+````
+
+**Don't**
+````css
+h1 {
+font-size: 30px;
+}
+````
+
+Always use one space between colon separator and value.
+But don't use space between property and colon separator.
+
+**Do**
+````css
+a {
+  text-decoration: underline;
+}
+````
+
+**Don't**
+````css
+a {
+  color :blue;
+  text-decoration:underline;
+}
+````
+
+Use one indent ( one tab ) for nested statements.
+
+````css
+@media screen {
+  a {
+    text-decoration: none;
+  }
+}
+````
+
+## Rules
+Don't use `!important` if not really necessary and site-wide.
+Use child selectors for specific target.
+
+**Do**
+````css
+div {
+  color: red;
+}
+
+div p {
+  color: green;
+}
+````
+
+**Don't**
+````css
+div {
+  color: red;
+}
+
+p {
+  color: green !important;
+}
+````
