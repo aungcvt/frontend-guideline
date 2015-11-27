@@ -1,9 +1,11 @@
-# Naming
+# CSS Style Guide
 
-## Class
+## Naming
+
+### Class
 Class name must be in all small letters. Don't use capitalize for class names.
 
-> e.g. class="abc defghi"
+> Do: class="abc defghi"
 
 > Don't: class="Abc Defghi"
 
@@ -13,17 +15,17 @@ Class name cannot start with numbers and special characters.
 
 Long class names can be divided by "-" dash ( minus ). Don't use underscore ( _ ) for class name dividers.
 
-> e.g. class="abc-def col-sm-3"
+> Do: class="abc-def col-sm-3"
 
 > Don't: class="abc_def col_sm_3"
 
 
-## Id
+### Id
 Long id should use underscore ( _ ) to divide. Don't use dash ( - ) for id.
 
 ( This is the way to differentiate between class and id. )
 
-> e.g. id="abc_def"
+> Do: id="abc_def"
 
 > Don't: id="abc-def"
 
@@ -35,13 +37,19 @@ Don't use camelCase for id. Leave camelCase for Javascript variables or other pr
 Other things like capitalize or small letters, numbers and special characters follow class name guide above.
 
 
-# Include
+## Include
 
-## Inline
+### Inline
 Don't use inline styles.
 
 > Don't: &lt;div style="margin-top: 0px;"&gt;
 
-Inline styles can be used when changing something ( working on dynamic styles ) from Javascript.
+Inline styles can be used when changing something ( mostly numbers ) from Javascript.
 
-Even don't use that way. For best practice, try changing class name from Javascript.
+> $('div').css('height', '100px');
+
+*Tip*
+
+For other dynamic styles ( e.g. color changing ), use class names to change the style from Javascript.
+
+> $('div').addClass('text-green');
